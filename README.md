@@ -161,8 +161,7 @@ To facilitate the user to use the API, I wrote an <a href="https://chiao.me/swag
 
 You can click the link (<a href="https://chiao.me/swagger/" target="_blank">https://chiao.me/swagger/</a>) to see the UI.
 
-<a href="https://chiao.me/swagger/ target="_blank"><img src="http://chiao.me/swagger/gif/swagger.png" 
-alt="swagger"  /></a>
+<img src="http://chiao.me/swagger/gif/swagger.png"  alt="swagger"  />
 
 ## 7) Future Plans
 
