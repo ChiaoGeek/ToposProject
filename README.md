@@ -46,7 +46,13 @@ go run runserver.go
 ```
 
 
+
 ## 4)The description of server API
+
+Data snapture 
+
+<p align="center"><img width="300" src="https://chiao.me/swagger/gif/data.png" alt="Vue logo"></p>
+
 
 ### 1 Query API
 
