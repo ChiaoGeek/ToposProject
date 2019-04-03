@@ -145,7 +145,7 @@ Response:
 ### 1. Query API
 
 
-<img src="http://chiao.me/swagger/gif/1.gif?raw=true" alt="swagger"  width="600px"/>
+<img src="./swagger.gif?raw=true" alt="swagger"  width="600px"/>
 
 
 ### 2. Transform API
