@@ -141,6 +141,44 @@ Response:
 ``` 
 
 
+## 5)API demo
+
+### 1. Query API
+
+![Alt Text](https://im.ezgif.com/tmp/ezgif-1-4eaba61f9b02.gif)
+
+
+### 2. Transform API
+
+![Alt Text](https://im.ezgif.com/tmp/ezgif-1-d750e11525a7.gif)
+
+
+
+## 6)Visualizing and interacting with the API by swagger
+
+To facilitate the user to use the API, I wrote an <a href="http://chiao.me/swagger" target="_blank">API document </a>based on <a href="https://swagger.io/" target="_blank">Swagger</a>
+
+
+You can click the link() to see the UI.
+
+
+## Future Plans
+
+There are some improvements I should do if I have enough time.
+
+> Add more kinds of query APIs
+
+> Support more powerful transformations 
+
+> Consider the efficiency of APIs
+
+> Consider the security of APIs
+
+> Support the multiple-source data for ETL tools
+
+
+
+
 
 ## 2)Deployment diagram
 
