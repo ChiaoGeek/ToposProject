@@ -49,16 +49,63 @@ go run runserver.go
 
 ## 4)The description of server API
 
-1)Query API
+### 1 Query API
 
-| API usage                      	| Description                             	| return type      	|
-|--------------------------------	|-----------------------------------------	|------------------	|
-| /query/?LSTSTATYPE=Constructed 	| query by Feature last status type.      	| application/json 	|
-| /query/?BIN=3245111            	| query by Building Identification Number 	| application/json 	|
-| /query/?FEAT_CODE=2100         	| query by FEAT_CODE                      	| application/json 	|
-| ...                            	| ...                                     	| ...              	|
+This API supports both single query parameter and multiple parameters.
 
+##### a.
 
+| API usage                           	| Description                             	| return type      	|
+|-------------------------------------	|-----------------------------------------	|------------------	|
+| /query/?LSTSTATYPE=Constructed      	| query by Feature last status type.      	| application/json 	|
+| /query/?BIN=3245111                 	| query by Building Identification Number 	| application/json 	|
+| /query/?FEAT_CODE=2100              	| query by FEAT_CODE                      	| application/json 	|
+| ...                                 	| ...                                     	| ...              	|
+| /query/?FEAT_CODE=2100&GROUNDELEV=6 	|  query by FEAT_CODE and GROUNDELEV      	| application/json 	|
+
+##### b. response
+
+```go
+type QueryResponse struct {
+	Message string           `json:"message"` # message for users
+	Code int                 `json:"code"`    # response code (200 success, 201 failure)
+	Result []orm.QueryResult `json:"result"`  # results (array)
+	Rows int                 `json:"rows"`    # the number of results
+}
+```
+
+##### c. response example
+
+Request : /query/?BIN=3245111    
+Response: 
+
+```json
+{
+  "message": "Success",
+  "code": 200,
+  "result": [
+    {
+      "id": "5ca3f0fa76fd1accaae70974",
+      "LSTMODDATE": "08/22/2017 12:00:00 AM +0000",
+      "CNSTRCT_YR": 1928,
+      "LSTSTATYPE": "Constructed",
+      "FEAT_CODE": "2100",
+      "GROUNDELEV": 6,
+      "SHAPE_AREA": 1167.66412052299,
+      "MPLUTO_BBL": "",
+      "GEOMSOURCE": "Photogramm",
+      "GEOLATLON": "-73.96113466505085 40.57743931616439, -73.96115106427175 40.577438626506336, -73.9611482066905 40.57739910513132, -73.96113180866084 40.57739979388887, -73.9611262071817 40.577322309983394, -73.96119013863581 40.577319622821236, -73.96120349754274 40.57750443832977, -73.9611403239488 40.57751761146039, -73.96113466505085 40.57743931616439",
+      "HEIGHTROOF": 37.5,
+      "BIN": "3245111",
+      "DOITT_ID": "786626",
+      "SHAPE_LEN": 183.80050188222,
+      "BASE_BBL": "3086910048",
+      "GEOTYPE": "MULTIPOLYGON"
+    }
+  ],
+  "rows": 1
+}
+``` 
 
 
 ## 2)Deployment diagram
