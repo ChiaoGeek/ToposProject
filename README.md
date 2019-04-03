@@ -1,4 +1,3 @@
-# ToposProject
 
 <p align="center"><a href="https://topos.com" target="_blank" rel="noopener noreferrer"><img width="300" src="https://topos.com/static/logo-76148d2a15dff2c266e1f9bf32befd89.png" alt="Vue logo"></a></p>
 
