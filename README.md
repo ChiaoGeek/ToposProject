@@ -5,7 +5,6 @@
 ## 1)The structure of this project
 
        .
-       ├── etl                   # Including etl.go. This directory holds the entire etl tools
        |
        etl
        │   ├── etl.go            # A simple ETL process written in Go that extract data from CSV file, clearn the  data, and stores data in a MongoDB.
@@ -28,7 +27,7 @@
             
 ## 3)How to run the etl tool and server API
 
-```
+```bash
 
 git clone https://github.com/ChiaoGeek/ToposProject.git
 
