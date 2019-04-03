@@ -3,12 +3,13 @@ package server
 import (
 	"./orm"
 	"encoding/json"
+	"fmt"
 	"github.com/fatih/structs"
+	"go.mongodb.org/mongo-driver/bson"
 	"log"
 	"net/http"
 	"net/url"
 	"strconv"
-	"go.mongodb.org/mongo-driver/bson"
 )
 
 const SUCCESS = 200
@@ -124,6 +125,8 @@ func Runserver(serverPort, dbAddress, dbName, dbPort, collectionName string) {
 	}
 	http.HandleFunc("/query/", queryHandler)
 	http.HandleFunc("/getAveByBaseBbl/", aveByBaseBblHandler)
+	fmt.Println("The server has been started")
 	log.Fatal(http.ListenAndServe(":" + serverPort, nil))
+
 }
 
