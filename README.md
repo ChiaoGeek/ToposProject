@@ -1,4 +1,4 @@
-
+<p align="center">Apply for BACK-END ENGINEER internship</p>
 <p align="center"><a href="https://topos.com" target="_blank" rel="noopener noreferrer"><img width="300" src="https://topos.com/static/logo-76148d2a15dff2c266e1f9bf32befd89.png" alt="Vue logo"></a></p>
 
 ## 1)The structure of this project
@@ -144,7 +144,8 @@ Response:
 
 ### 1. Query API
 
-![Alt Text](http://chiao.me/swagger/gif/1.gif)
+
+<img src="http://chiao.me/swagger/gif/1.gif" alt="swagger"  />
 
 
 ### 2. Transform API
@@ -155,12 +156,12 @@ Response:
 
 ## 6)Visualizing and interacting with the API by Swagger tool
 
-To facilitate the user to use the API, I wrote an <a href="https://chiao.me/swagger/" target="_blank">API document </a>based on <a href="https://swagger.io/" target="_blank">Swagger</a>
+To facilitate the user to use the API, I wrote an <a href="https://chiao.me/swagger/" target="_blank" >API document </a>based on <a href="https://swagger.io/" target="_blank">Swagger</a>
 
 
-You can click the link (<a href="https://chiao.me/swagger/" target="_blank">https://chiao.me/swagger/</a>) to see the UI.
+You can click the link (<a href="https://chiao.me/swagger/" target="_blank" >https://chiao.me/swagger/</a>) to see the UI.
 
-<img src="http://chiao.me/swagger/gif/swagger.png"  alt="swagger"  />
+<img src="http://chiao.me/swagger/gif/swagger.png" alt="swagger"  />
 
 ## 7) Future Plans
 
