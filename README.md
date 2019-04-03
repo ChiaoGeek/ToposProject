@@ -145,22 +145,24 @@ Response:
 
 ### 1. Query API
 
-![Alt Text](https://im.ezgif.com/tmp/ezgif-1-4eaba61f9b02.gif)
+![Alt Text](http://chiao.me/swagger/gif/1.gif)
 
 
 ### 2. Transform API
 
-![Alt Text](https://im.ezgif.com/tmp/ezgif-1-d750e11525a7.gif)
+![Alt Text](http://chiao.me/swagger/gif/2.gif)
 
 
 
 ## 6)Visualizing and interacting with the API by Swagger tool
 
-To facilitate the user to use the API, I wrote an <a href="http://chiao.me/swagger" target="_blank">API document </a>based on <a href="https://swagger.io/" target="_blank">Swagger</a>
+To facilitate the user to use the API, I wrote an <a href="https://chiao.me/swagger/" target="_blank">API document </a>based on <a href="https://swagger.io/" target="_blank">Swagger</a>
 
 
-You can click the link() to see the UI.
+You can click the link (<a href="https://chiao.me/swagger/" target="_blank">https://chiao.me/swagger/</a>) to see the UI.
 
+<a href="https://chiao.me/swagger/ target="_blank"><img src="http://chiao.me/swagger/gif/swagger.png" 
+alt="swagger"  /></a>
 
 ## 7) Future Plans
 
