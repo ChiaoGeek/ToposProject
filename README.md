@@ -51,6 +51,14 @@ go run runserver.go
 
 1)Query API
 
+| API usage                      	| Description                             	| return type      	|
+|--------------------------------	|-----------------------------------------	|------------------	|
+| /query/?LSTSTATYPE=Constructed 	| query by Feature last status type.      	| application/json 	|
+| /query/?BIN=3245111            	| query by Building Identification Number 	| application/json 	|
+| /query/?FEAT_CODE=2100         	| query by FEAT_CODE                      	| application/json 	|
+| ...                            	| ...                                     	| ...              	|
+
+
 
 
 ## 2)Deployment diagram
