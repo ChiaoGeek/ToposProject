@@ -55,7 +55,7 @@ This API supports both single query parameter and multiple parameters.
 
 ##### a.
 
-| API usage                           	| Description                             	| return type      	|
+| API usage                           	| Description                             	| Response type      	|
 |-------------------------------------	|-----------------------------------------	|------------------	|
 | /query/?LSTSTATYPE=Constructed      	| query by Feature last status type.      	| application/json 	|
 | /query/?BIN=3245111                 	| query by Building Identification Number 	| application/json 	|
@@ -106,6 +106,40 @@ Response:
   "rows": 1
 }
 ``` 
+### 2 Transform API
+
+This API can get the average height of the buildings by BASE_BBL
+
+##### a.
+
+| API usage                             	| Description                                         	| return type      	|
+|---------------------------------------	|-----------------------------------------------------	|------------------	|
+| /getAveByBaseBbl/?BASE_BBL=3086910048 	| get the average height of the buildings by BASE_BBL 	| application/json 	|
+
+
+##### b. response
+
+```go
+type AveHeightResponse struct {
+	Message string `json:"message"`
+	Code int `json:"code"`
+	Result float64 `json:"result"`
+}
+```
+
+##### c. response example
+
+Request : /getAveByBaseBbl/?BASE_BBL=3086910048 	
+Response: 
+
+```json
+{
+  "message": "Success",
+  "code": 200,
+  "result": 37.5
+}
+``` 
+
 
 
 ## 2)Deployment diagram
